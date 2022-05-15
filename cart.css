@@ -1,250 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-*{
-  font-family: 'Comfortaa', cursive;
+<!DOCTYPE html>
 
-	margin: 0;
+<html>
 
-	padding: 0;
+<head>
 
-	box-sizing: border-box;
+	<title>Shopping Cart</title>
 
-}
+	<link rel="stylesheet" type="text/css" href="cart.css">
 
-.container{
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	max-width: 1200px;
+</head>
 
-	margin: 0 auto;
+<body style="background-color:powderblue;">
 
-}
 
-.container > h1{
 
-	padding: 20px 0;
+<div class="container">
 
-}
+	<h1>Shopping Cart</h1>
 
-.cart{
+	<div class="cart" style="width:50%;text-align: center;margin: auto;">
+		<div> <image src= "./C:\Users\LENOVO\OneDrive\Desktop\Presentation\Kick Starter's.jpeg"/> </div>
 
-	display: flex;
+		<div class="products">
 
-}
-products{
+			<div class="product">
 
-	flex: 0.75;
+				<img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11622252/2020/3/18/bd6e36d4-32ba-4cc9-80c9-4e9a4e5be0691584531567379-Skechers-Women-Rose-ULTRA-FLEX-20-FLASH-ILLUSION-Walking-Sho-1.jpg" width="100" height="100%"\>
 
-}
+				<div class="product-info">
 
-.product{
+					<h3 class="product-name">New Shoes</h3>
 
-	display: flex;
+					<h4 class="product-price">â‚¹ 1,000</h4>
 
-	width: 100%;
+					<h4 class="product-offer">50%</h4>
 
-	height: 200px;
+					<p class="product-quantity">Qnt: <input value="1" name="">
 
-	overflow: hidden;
+					<p class="product-remove">
 
-	border: 1px solid silver;
+						<i class="fa fa-trash" aria-hidden="true"></i>
 
-	margin-bottom: 20px;
+						<span class="remove">Remove</span>
 
-}
+					</p>
 
-.product:hover{
+				</div>
 
-	border: none;
+			</div>
 
-	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+			<div class="product" >
 
-	transform: scale(1.01);
+				<img src="https://rukminim2.flixcart.com/image/416/416/jy0frm80/bag/x/y/e/cute-pink-kitty-girl-mini-bag-gremy-10-original-imafg3bsn976gyg9.jpeg?q=70" width="100" height="100%"\>
 
-}
+				<div class="product-info">
 
-.product > img{
+					<h3 class="product-name">New Bag</h3>
 
-	width: 300px;
+					<h4 class="product-price">â‚¹ 2,000</h4>
 
-	height: 200px;
+					<h4 class="product-offer">40%</h4>
 
-	object-fit: cover;
+					<p class="product-quantity">Qnt: <input value="1" name="">
 
-}
+					<p class="product-remove">
 
-.product > img:hover{
+						<i class="fa fa-trash" aria-hidden="true"></i>
 
-	transform: scale(1.04);
+						<span class="remove">Remove</span>
 
-}
-.product-info{
+					</p>
 
-	padding: 20px;
+				</div>
 
-	width: 100%;
+			</div>
 
-	position: relative;
+		</div>
 
-}
+		<div class="cart-total">
 
-.product-name, .product-price, .product-offer{
+			<p>
 
-	margin-bottom: 20px;
+				<span>Total Price</span>
 
-}
+				<span>â‚¹ 3,000</span>
 
-.product-remove{
+			</p>
 
-	position: absolute;
+			<p>
 
-	bottom: 20px;
+				<span>Number of Items</span>
 
-	right: 20px;
+				<span>2</span>
 
-	padding: 10px 25px;
+			</p>
 
-	background-color: green;
+			<p>
 
-	color: white;
+				<span>You Save</span>
 
-	cursor: pointer;
+				<span>â‚¹ 1,000</span>
 
-	border-radius: 5px;
+			</p>
 
-}
+			<a href="#">Proceed to Checkout</a>
 
-.product-remove:hover{
+		</div>
 
-	background-color: white;
+	</div>
 
-	color: green;
+</div>
 
-	font-weight: 600;
 
-	border: 1px solid green;
 
-}
-
-.product-quantity > input{
-
-	width: 40px;
-
-	padding: 5px;
-
-	text-align: center;
-
-}
-
-.fa{
-
-	margin-right: 5px;
-
-}
-
-.cart-total{
-
-	flex: 0.25;
-
-	margin-left: 20px;
-
-	padding: 20px;
-
-	height: 240px;
-
-	border: 1px solid silver;
-
-	border-radius: 5px;
-
-}
-
-.cart-total p{
-
-	display: flex;
-
-	justify-content: space-between;
-
-	margin-bottom: 30px;
-
-	font-size: 20px;
-
-}
-
-.cart-total a{
-
-	display: block;
-
-	text-align: center;
-
-	height: 40px;
-
-	line-height: 40px;
-
-	background-color: tomato;
-
-	color: white;
-
-	text-decoration: none;
-
-}
-
-.cart-total a:hover{
-
-	background-color: red;
-
-}
-
-@media screen and (max-width: 700px){
-
-	.remove{
-
-		display: none;
-
-	}
-
-	.product{
-
-		height: 150px;
-
-	}
-
-	.product > img{
-
-		height: 150px;
-
-		width: 200px;
-
-	}
-
-	.product-name, .product-price, .product-offer{
-
-		margin-bottom: 10px;
-
-	}
-
-}
-@media screen and (max-width: 900px){
-
-	.cart{
-
-		flex-direction: column;
-
-	}
-
-	.cart-total{
-
-		margin-left: 0;
-
-		margin-bottom: 20px;
-
-	}
-
-}
-
-@media screen and (max-width: 1220px){
-
-	.container{
-
-		max-width: 95%;
-
-	}
-
-}
+</body>
