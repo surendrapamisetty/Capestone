@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-container{
+    height: 18vh;
+    padding: 10px;
+    background-size: cover;
+}
+.price {
+    font-family: 'roboto';
+    font-size: 16px;
+    padding-left: 10px;
+}
+.button-container{
+    margin: 20px;
+    align-content: center;
+}
+.btn{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.container-1{
+    align-content: 
+}
+.product_item_text{
+    text-align: center;
+}
+.image{
+    width: 35vw;
+}
+.heading{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    font-weight: bold;
+}
+.bg-container {
+    background-color: #19232d;
+}
+
+.logo {
+    height: 60px;
+    width: 80px;
+}
+
+.icons {
+    color: #5a7184;
+    font-size: 20px;
+}
+
+.icon-container {
+    background-color: #959ead;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 2px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+p {
+    color: #5a7184;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #959aed;
+}
+
+.horizontal-line {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5a7184;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7f707 !important;
+    text-align: center;
+    font-family: 'monoton';
+}
+.fa-shopping-cart{
+    color: azure;
+    align-self: 20vw;
+    margin-top: 12px;
+}
+.nav-bg {
+    background-image: linear-gradient(to left, #b5a604, black);
+}
+font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.bg-container {
+    background-color: #19232d;
+}
+
+.logo {
+    height: 60px;
+    width: 80px;
+}
+
+.icons {
+    color: #5a7184;
+    font-size: 20px;
+}
+
+.icon-container {
+    background-color: #959ead;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 2px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+p {
+    color: #5a7184;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #959aed;
+}
+
+.horizontal-line {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5a7184;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7f707 !important;
+    text-align: center;
+    font-family: 'monoton';
+}
+nav-bg {
+    background-image: linear-gradient(to left, #b5a604, black);
+}
