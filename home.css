@@ -4,6 +4,7 @@
     background-image: url('https://res.cloudinary.com/dlao6ox5q/image/upload/bo_0px_solid_rgb:000,o_26,q_80/v1620556891/istockphoto-1173579665-612x612_la9rzx.jpg');
     background-size: cover;
 }
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -11,6 +12,7 @@
     text-align: center;
     font-family: 'monoton';
 }
+
 .span-item {
     color: #fc3f05;
     text-decoration: line-through;
