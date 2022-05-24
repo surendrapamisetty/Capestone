@@ -19,19 +19,13 @@
     font-weight: bold;
 }
 .container-1{
-    align-content: center;
-}
-.fa-home{
-    align-self: center;
-    size: 100px;
-    color: #e0dee3;
-    margin-top: 12px;
+    align-content: ;
 }
 .product_item_text{
     text-align: center;
 }
 .image{
-    width: 30vw;
+    width: 35vw;
 }
 .heading{
     font-family: 'Times New Roman';
