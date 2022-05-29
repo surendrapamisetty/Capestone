@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en"> 
+<head>
+<link rel="stylesheet" href="ProductListCss.css">
+<title>Product List</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bg fixed-top">
+   <a class="navbar-brand logo" href="#"> Kick<span class="span-item">Start</span>ers </a>
+
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+           <div class="d-flex flex-row justify-content-end">
+               <form class="form-inline my-2 mr-lg-2 my-lg-0">
+               </form>
+           </div>
+       </ul>
+   </div>
+   <div class="col-lg-3">
+       <div class="header_right">
+           <div class="header_right_auth">
+               <p>Welcome Admin</p>
+               <a href="file:///C:/Users/a861677/capstone%20pages/kickstarterslogin.html"><p>Logout</p></a>
+           </div>
+       </div>
+   </div>	
+</nav>
+<body>
+<div class="container">
+<a href="file:///C:/Users/a861677/capstone%20pages/Admin.html" type="submit"class="btn1"> &#60;-- Go to Dashboard </a>
+ <div class="product-display">
+      <table class="product-display-table">
+         <thead>
+         <tr>
+            <th>product image</th>
+			<th>product id</th>
+            <th>product name</th>
+			<th>colour</th>
+			<th>quantity</th>
+			<th>discription</th>
+            <th>product price</th>
+            <th>action</th>
+         </tr>
+         </thead>
+         <?php while($row = mysqli_fetch_assoc($select)){ ?>
+         <tr>
+            <td><img src="uploaded_img" height="100" alt=""></td>
+            <td></td>
+            <td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+            <td>
+               <a href="admin_update.php?edit=<?php echo $row['id']; ?>" class="btn"> <i class="fas fa-edit"></i> edit </a>
+               <a href="admin_page.php?delete=<?php echo $row['id']; ?>" class="btn"> <i class="fas fa-trash"></i> delete </a>
+            </td>
+         </tr>
+      <?php } ?>
+      </table>
+   </div>
+</div>
+</body>
+</html>

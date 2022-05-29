@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="C:\Users\a861740\OneDrive - Atos\Desktop\AdminPage\admincss.css">
+    <!-- Boxicons CDN Link -->
+    <link href='admincss.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Admin Dashboard</title>
+	 
+   </head>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bg fixed-top">
+    <a class="navbar-brand logo" href="#"> Kick<span class="span-item">Start</span>ers </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <div class="d-flex flex-row justify-content-end">
+                <form class="form-inline my-2 mr-lg-2 my-lg-0">
+                </form>
+            </div>
+        </ul>
+
+    </div>
+    <div class="col-lg-3">
+        <div class="header_right">
+            <div class="header_right_auth">
+                <p>Welcome Admin</p>
+                <a href="file:///C:/Users/a861677/capstone%20pages/kickstarterslogin.html"><p>Logout</p></a>
+            </div>
+        </div>
+    </div>	
+</nav>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/a861677/capstone%20pages/ProductList.html">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Product List</span>
+          </a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/a861677/capstone%20pages/CategoryList.html">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Add a Category</span>
+          </a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/a861677/capstone%20pages/CustomerList.html">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Customer List</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="C:/Users/Srihari/Documents/GitHub/capstone/cap1/capstone12/capstone_admin.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Welcome Admin </span>
+       
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+	
+	<div class="adding">
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Add Product</div>
+		&nbsp; &nbsp; &nbsp; &nbsp;
+          <div class="sales-details">
+		    <a href="file:///C:/Users/a861677/capstone%20pages/addProduct.html" type="submit" class="btn">Click..here </a>
+		  
+          </div>
+       
+        </div>
+		 
+        <div class="top-sales box">
+          <div class="title">Add coupon</div>
+		  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <div class="sales-details">
+		    <a href=" file:///C:/Users/a861677/capstone%20pages/couponcreation.html" type="submit" class="btn1">Click..here </a>
+		  
+          </div>
+        </div>
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+

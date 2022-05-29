@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add Category</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="addCategoryCss.css">
+
+</head>
+<body>
+
+   
+<div class="container">
+<a href="file:///C:/Users/a861677/capstone%20pages/Admin.html" type="submit"class="btn1"> &#60;-- Go to Dashboard </a>
+
+   <div class="admin-product-form-container">
+
+      <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+         <h3>add a new Category</h3>
+		 <input type="text" placeholder="Enter catogery id" name="Catogery_id" class="box">
+         <input type="text" placeholder="Enter catogery name" name="Catogery_name" class="box">
+         <input type="number" placeholder="Enter catogery discription" name="Category_disc" class="box">
+		  <a href="file:///C:/Users/Srihari/Desktop/Admin.html" type="submit"class="btn"> Add Category </a>
+      </form>
+
+   </div>
+</div>
+
+
+</body>
+</html>
